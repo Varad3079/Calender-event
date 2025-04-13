@@ -1,27 +1,39 @@
+# Project Setup
 
-# MERN Stack Application
+This guide provides step-by-step instructions to set up and run the project (both server and client).
 
-A full-stack MERN (MongoDB, Express, React, Node.js) application.
+---
 
- ⚙️ Setup Instructions
+## 📁 Base Directory Setup
 
- 1. Clone the Repository
+1. Navigate to the base directory of the project.
 
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+2. Install server dependencies:
 
-2. Create .env File at Root
-Add the following to a .env file in the root /:
-MONGO_URI=your_mongodb_connection_string
-CLIENT_URL=http://localhost:3000
-
-3. Install Dependencies & Run Server
+```bash
 npm install
-npm run dev
-This will start the backend server on http://localhost:5000.
 
-4. Run the Client
+
+Create a .env file in the base directory with the following variables:
+
+MONGO_URI=<your_mongodb_connection_string>
+CLINT_URL=<your_client_url>
+Replace <your_mongodb_connection_string> and <your_client_url> with actual values.
+
+Start the development server:
+npm run dev
+
+Client Setup
+Navigate to the client directory:
 cd client
+
+Install client dependencies:
 npm install -f
+
+Start the client:
 npm start
-This will start the React app on http://localhost:3000.
+
+✅ Your project is now running!
+Server is running at: http://localhost:<your-server-port>
+
+Client is running at: http://localhost:3000
